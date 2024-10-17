@@ -1,0 +1,29 @@
+my-token-swap-app/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── WalletConnection.js
+│   │   ├── TokenSwapForm.js
+│   │   ├── SwapDetails.js
+│   │   ├── TransactionStatus.js
+│   │   └── RecipientAddressInput.js
+│   ├── context/
+│   │   └── WalletContext.js
+│   ├── hooks/
+│   │   └── useWallet.js
+│   ├── utilities/
+│   │   ├── api.js
+│   │   └── wallet.js
+│   ├── pages/
+│   │   ├── HomePage.js
+│   │   └── NotFoundPage.js
+│   ├── styles/
+│   │   ├── App.css
+│   │   └── index.css
+│   ├── App.js
+│   ├── index.js
+│   └── routes.js
+├── package.json
+└── README.md
