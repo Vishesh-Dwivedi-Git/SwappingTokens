@@ -1,0 +1,300 @@
+.title{
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+:root {
+  --clr-1: #00c2ff;
+  --clr-2: #33ff8c;
+  --clr-3: #ffc640;
+  --clr-4: #e54cff;
+
+  --blur: 1rem;
+  --fs: clamp(3rem, 8vw, 7rem);
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Inter", "DM Sans", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: var(--fs);
+  font-weight: 400;
+  letter-spacing: var(--ls);
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.subtitle {
+}
+
+.aurora {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  mix-blend-mode: darken;
+  pointer-events: none;
+}
+
+.aurora__item {
+  overflow: hidden;
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  background-color: var(--clr-1);
+  border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  filter: blur(var(--blur));
+  mix-blend-mode: overlay;
+}
+
+.aurora__item:nth-of-type(1) {
+  top: -50%;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-1 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(2) {
+  background-color: var(--clr-3);
+  right: 0;
+  top: 0;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-2 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(3) {
+  background-color: var(--clr-2);
+  left: 0;
+  bottom: 0;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-3 8s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(4) {
+  background-color: var(--clr-4);
+  right: 0;
+  bottom: -50%;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-4 24s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+
+  50% {
+    top: 100%;
+    right: 75%;
+  }
+
+  75% {
+    top: 100%;
+    right: 25%;
+  }
+
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+@keyframes aurora-2 {
+  0% {
+    top: -50%;
+    left: 0%;
+  }
+
+  60% {
+    top: 100%;
+    left: 75%;
+  }
+
+  85% {
+    top: 100%;
+    left: 25%;
+  }
+
+  100% {
+    top: -50%;
+    left: 0%;
+  }
+}
+
+@keyframes aurora-3 {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+
+  40% {
+    bottom: 100%;
+    left: 75%;
+  }
+
+  65% {
+    bottom: 40%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes aurora-4 {
+  0% {
+    bottom: -50%;
+    right: 0;
+  }
+
+  50% {
+    bottom: 0%;
+    right: 40%;
+  }
+
+  90% {
+    bottom: 50%;
+    right: 25%;
+  }
+
+  100% {
+    bottom: -50%;
+    right: 0;
+  }
+}
+
+@keyframes aurora-border {
+  0% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+
+  25% {
+    border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
+  }
+
+  50% {
+    border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
+  }
+
+  75% {
+    border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
+  }
+
+  100% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+} */
+/* .content h1 {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #00c2cb;
+    text-shadow: 0px 0px 10px #00c2cb, 0px 0px 20px #00c2cb;
+    margin: 3px;
+   }
+.content h1::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #00c2cb;
+    transform: perspective(10px) rotateX(10deg) scale(1, 0.2);
+    filter: blur(1em);
+    opacity: 0.5;
+   }
+
+   /* Base styling for glow and layout */
+   /* .title {
+    font-size: 4rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7),
+                 0 0 20px rgba(0, 255, 255, 0.5),
+                 0 0 30px rgba(0, 255, 255, 0.3);
+    position: relative;
+    z-index: 1; 
+  } */
+  
+
+
+/* Add these styles in your App.css */
+.wallet-adapter-button {
+  
+}
+
+.wallet-adapter-button {
+  background-color: #1B9CFC !important;  /* Vibrant blue background */
+  color: #ffffff !important;             /* White text for visibility */
+  border-radius: 10px !important;        /* Rounded corners */
+  padding: 10px 20px !important;         /* Adjust padding */
+  font-size: 18px !important;            /* Increase font size */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease !important;  /* Smooth transition */
+  box-shadow: 0 4px 15px rgba(27, 156, 252, 0.6) !important;  /* Soft blue glow effect */
+}
+
+.wallet-adapter-button:hover {
+  background-color: #5acaff !important;  /* Lighter blue on hover */
+  box-shadow: 0 6px 20px rgba(27, 156, 252, 0.8) !important;  /* Increase blue glow on hover */
+}
+
+.wallet-adapter-button:active {
+  transform: scale(0.95) !important;     /* Scale down on click */
+  box-shadow: 0 2px 10px rgba(27, 156, 252, 0.6) !important;  /* Reduce blue glow on click */
+}
+
+.wallet-adapter-button:disabled {
+  background-color: #808080 !important;  /* Neutral gray for disabled state */
+  color: #cccccc !important;             /* Light gray text for disabled */
+  cursor: not-allowed !important;        /* Disabled cursor */
+  box-shadow: none !important;           /* Remove glow when disabled */
+}
+
+
+.wallet-adapter-button {
+  margin-bottom: 100px; /* Adjust this value as needed */
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.sparkle-dot {
+  position: absolute;
+  width: 5px; /* Increased size */
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  animation: sparkle 2s ease-in-out infinite; /* Faster sparkle */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+

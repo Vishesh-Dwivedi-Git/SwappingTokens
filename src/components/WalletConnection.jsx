@@ -4,7 +4,6 @@ import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { UnsafeBurnerWalletAdapter, PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';
 import {
     WalletModalProvider,
-    WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
 import { clusterApiUrl } from '@solana/web3.js';
 
@@ -32,7 +31,6 @@ const Wallet = ({ children }) => {
             <WalletProvider wallets={wallets} autoConnect={true}>
                 <WalletModalProvider>
                     {/* Buttons for wallet connection and disconnection */}
-                    <WalletMultiButton />
                     {/* Your app's components go here, nested within the context providers. */}
                     {children}
                 </WalletModalProvider>
