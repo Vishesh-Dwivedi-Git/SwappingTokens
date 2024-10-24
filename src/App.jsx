@@ -5,6 +5,7 @@ import WalletConnection from './components/WalletConnection';
 import DEX from './components/DEX';
 import Navbar from './components/Navbar';
 import TokenSwapForm from './components/TokenSwapForm'
+import Footer from './components/Footer';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <DEX/>
       <TokenSwapForm/>
+      <Footer/>
       </WalletConnection>
     </>
   )
